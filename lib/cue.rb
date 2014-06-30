@@ -16,6 +16,10 @@ class Cue
   end
 
   def last
-    @cue.last 
+    @cue.last
+  end
+
+  def sum
+    @cue.count
   end
 end

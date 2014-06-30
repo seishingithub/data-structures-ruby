@@ -20,5 +20,13 @@ describe Cue do
     expect(cue.empty?).to eq false
     expect(cue.first).to eq "Peggy"
     expect(cue.last).to eq "Ellie"
+    expect(cue.sum).to eq 2
+  end
+
+  it 'tells you how many items are in the queue' do
+    cue.add("Peggy")
+    cue.add("Ellie")
+    cue.add("Paul")
+    expect(cue.sum).to eq 3
   end
 end
