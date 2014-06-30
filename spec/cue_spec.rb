@@ -13,4 +13,12 @@ describe Cue do
     expect(cue.empty?).to eq false
     expect(cue.first).to eq "Peggy"
   end
+
+  it 'returns the item at the end of the queue' do
+    cue.add("Peggy")
+    cue.add("Ellie")
+    expect(cue.empty?).to eq false
+    expect(cue.first).to eq "Peggy"
+    expect(cue.last).to eq "Ellie"
+  end
 end

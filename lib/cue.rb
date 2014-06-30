@@ -14,4 +14,8 @@ class Cue
   def first
     @cue.first
   end
+
+  def last
+    @cue.last 
+  end
 end
