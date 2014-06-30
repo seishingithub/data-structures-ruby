@@ -19,7 +19,7 @@ describe Cue do
     cue.enqueue("Ellie")
     expect(cue.empty?).to eq false
     expect(cue.first).to eq "Peggy"
-    expect(cue.last).to eq "Ellie"
+    expect(cue.dequeue).to eq "Ellie"
     expect(cue.sum).to eq 2
   end
 

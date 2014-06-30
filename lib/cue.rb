@@ -15,7 +15,7 @@ class Cue
     @cue.first
   end
 
-  def last
+  def dequeue
     @cue.last
   end
 
