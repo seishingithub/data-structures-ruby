@@ -19,7 +19,7 @@ class Cue
     @cue.last
   end
 
-  def sum
+  def size
     @cue.count
   end
 end
