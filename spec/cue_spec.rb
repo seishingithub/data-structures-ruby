@@ -9,14 +9,14 @@ describe Cue do
   end
 
   it 'adds an item to the front queue "enqueue" style' do
-    cue.add("Peggy")
+    cue.enqueue("Peggy")
     expect(cue.empty?).to eq false
     expect(cue.first).to eq "Peggy"
   end
 
   it 'returns the item at the end of the queue' do
-    cue.add("Peggy")
-    cue.add("Ellie")
+    cue.enqueue("Peggy")
+    cue.enqueue("Ellie")
     expect(cue.empty?).to eq false
     expect(cue.first).to eq "Peggy"
     expect(cue.last).to eq "Ellie"
@@ -24,9 +24,9 @@ describe Cue do
   end
 
   it 'tells you how many items are in the queue' do
-    cue.add("Peggy")
-    cue.add("Ellie")
-    cue.add("Paul")
+    cue.enqueue("Peggy")
+    cue.enqueue("Ellie")
+    cue.enqueue("Paul")
     expect(cue.sum).to eq 3
   end
 end

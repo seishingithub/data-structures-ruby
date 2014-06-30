@@ -7,7 +7,7 @@ class Cue
     @cue.empty?
   end
 
-  def add(person)
+  def enqueue(person)
     @cue << person
   end
 
